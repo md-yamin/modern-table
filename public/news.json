@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "title": "Introducing Our Summer Menu",
+      "description": "We're excited to launch our new summer menu featuring fresh, seasonal ingredients. Come and enjoy our new dishes that celebrate the flavors of summer!",
+      "date": "2024-06-01"
+    },
+    {
+      "id": 2,
+      "title": "Chef's Special: Grilled Salmon",
+      "description": "Our chef has created a special dish for this month: Grilled Salmon with Lemon Herb Sauce. It's a must-try for seafood lovers!",
+      "date": "2024-06-15"
+    },
+    {
+      "id": 3,
+      "title": "Happy Hour Specials",
+      "description": "Join us for Happy Hour from 4-6 PM daily and enjoy special discounts on appetizers. Perfect for unwinding after a long day!",
+      "date": "2024-06-20"
+    },
+    {
+      "id": 4,
+      "title": "Live Music Nights",
+      "description": "We're bringing live music to our restaurant every Friday night. Enjoy great food and live performances by local artists.",
+      "date": "2024-06-25"
+    },
+    {
+      "id": 5,
+      "title": "Farm-to-Table Experience",
+      "description": "Learn about our commitment to sustainability and quality with our Farm-to-Table Experience. Discover where our ingredients come from and how we use them to create delicious dishes.",
+      "date": "2024-07-01"
+    },
+    {
+      "id": 6,
+      "title": "Cooking Classes with Our Chef",
+      "description": "Sign up for cooking classes with our chef and learn how to make some of our signature dishes at home. Classes are available every Saturday.",
+      "date": "2024-07-10"
+    },
+    {
+      "id": 7,
+      "title": "New Dessert Menu",
+      "description": "Indulge in our new dessert menu featuring decadent treats like Chocolate Lava Cake and Tiramisu. Perfect for satisfying your sweet tooth!",
+      "date": "2024-07-15"
+    },
+    {
+      "id": 8,
+      "title": "Customer Appreciation Day",
+      "description": "Join us for Customer Appreciation Day and enjoy complimentary appetizers as a thank you for your continued support.",
+      "date": "2024-07-20"
+    },
+    {
+      "id": 9,
+      "title": "Family Fun Day",
+      "description": "Bring the whole family for a fun-filled day with special kids' meals, games, and activities. A great day out for everyone!",
+      "date": "2024-07-25"
+    },
+    {
+      "id": 10,
+      "title": "New Year's Eve Celebration",
+      "description": "Ring in the New Year with us! Enjoy a special New Year's Eve menu and live music to celebrate the arrival of the new year.",
+      "date": "2024-12-31"
+    }
+  ]
+  

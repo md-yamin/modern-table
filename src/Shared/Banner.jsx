@@ -1,6 +1,6 @@
 const Banner = ({subHeading, heading, buttonText,bgImgUrl}) => {
     return (
-        <div style={{backgroundImage: `url(${bgImgUrl})`}} className="w-screen h-screen text-white flex justify-center items-end bg-no-repeat bg-cover bg-fixed">
+        <div style={{backgroundImage: `url(${bgImgUrl})`}} className="h-[80vh] text-white flex justify-center items-end bg-no-repeat bg-cover bg-fixed">
             <div className="-ml-[10%] mb-[5%] space-y-5">
                 <h4 className="text-sm font-mono tracking-wider">{subHeading}</h4>
                 <h1 className="lg:text-6xl xl:text-7xl text-wrap max-w-3xl font-serif">{heading}</h1>

@@ -26,14 +26,13 @@ const Home = () => {
     }
 
     return (
-        <div>
+        <div className="space-y-[20vh]">
             <Banner
                 subHeading='WELCOME TO URBAN FEAST'
                 heading='Embark on a Journey of Culinary Excellence'
                 buttonText='our menu'
                 bgImgUrl='https://i.ibb.co/qdzmFQP/55861.jpg'
             ></Banner>
-            <h2 className="md:text-4xl lg:text-5xl 2xl:text-6xl font-serif font-light text-center mb-[4%] mt-[6%]">Our Specialties</h2>
             <ItemsGrid></ItemsGrid>
             <IntroductionSection sectionData={sectionData}></IntroductionSection>
             <TableBooking></TableBooking>
