@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home";
 import Menu from "../Pages/Menu/Menu";
 import Error404 from "../Shared/Error404";
 import News from "../Pages/News/News";
+import Contact from "../Pages/Contact/Contact";
 
 export const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
             {
             path: "/news",
             element: <News></News>,
+            },
+            {
+            path: "/contact",
+            element: <Contact></Contact>,
             },
     ]
     },
