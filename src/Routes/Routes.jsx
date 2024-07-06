@@ -5,6 +5,7 @@ import Menu from "../Pages/Menu/Menu";
 import Error404 from "../Shared/Error404";
 import News from "../Pages/News/News";
 import Contact from "../Pages/Contact/Contact";
+import About from "../Pages/About/About";
 
 export const router = createBrowserRouter([
     {
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
             {
             path: "/menu",
             element: <Menu></Menu>,
+            },
+            {
+            path: "/about",
+            element: <About></About>,
             },
             {
             path: "/news",

@@ -16,7 +16,7 @@ const News = () => {
             {
                 news.map(article => <div key={article.id} className="flex mx-auto justify-center items-center">
                     <div className="pr-[5vw]">
-                        <h2>{formatDate(article.date)}</h2>
+                        <h2 className="w-[10vw]">{formatDate(article.date)}</h2>
                     </div>
                     <div className="border-l-2 pl-[5vw] mb-10">
                         <h3 className="text-xl lg:text-3xl font-serif mt-2 mb-5">{article.title}</h3>

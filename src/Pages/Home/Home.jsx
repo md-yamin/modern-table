@@ -25,6 +25,8 @@ const Home = () => {
         para4:"The Modern Table offers a chic and inviting atmosphere, complemented by elegant dining facilities that create the perfect setting for any occasion",
     }
 
+    const topHeading = "Excellence in Every Bite, Quality in Every Dish"
+
     return (
         <div className="space-y-[20vh]">
             <Banner
@@ -34,7 +36,7 @@ const Home = () => {
                 bgImgUrl='https://i.ibb.co/qdzmFQP/55861.jpg'
             ></Banner>
             <ItemsGrid></ItemsGrid>
-            <IntroductionSection sectionData={sectionData}></IntroductionSection>
+            <IntroductionSection topHeading={topHeading} sectionData={sectionData}></IntroductionSection>
             <TableBooking></TableBooking>
         </div>
     );
