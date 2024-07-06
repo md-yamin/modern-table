@@ -6,7 +6,7 @@ const Banner = ({subHeading, heading, buttonText,bgImgUrl}) => {
                 <h1 className="lg:text-6xl xl:text-7xl text-wrap max-w-3xl font-serif">{heading}</h1>
                 {
                     buttonText?
-                    <button className="bg-orange-500 px-10 py-3 rounded-full uppercase">{buttonText}</button>
+                    <button className="bg-[#C40C0C] px-10 py-3 rounded-full uppercase">{buttonText}</button>
                     :
                     <></>
                 }

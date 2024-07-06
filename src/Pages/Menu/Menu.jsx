@@ -2,7 +2,7 @@ import ItemsGrid from "../../Shared/ItemsGrid";
 
 
 const Menu = () => {
-    const btnStyle = "px-7 py-3 rounded-3xl text-lg border border-white hover:border-orange-500"
+    const btnStyle = "px-7 py-3 rounded-3xl text-lg border border-white hover:border-[#C40C0C]"
     return (
         <div>
             <h2 className="md:text-4xl lg:text-5xl 2xl:text-6xl font-serif font-light text-center mb-[4vw] pt-[10vw]">Gourmet Delights</h2>
