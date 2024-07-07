@@ -2,16 +2,25 @@ import { FaGoogle } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 
-const Login = () => {
+const Register = () => {
 
     const inputStyle = "border w-full h-[3vw]"
-
     return (
         <div className="flex w-full justify-between items-center">
-            <form className="space-y-[3vw] mx-auto" action="">
+            <form className="space-y-[1vw] mx-auto" action="">
                 <div>
-                    <h2 className="text-[3vw]">Welcome Back</h2>
-                    <p className="text-[1.2vw]">Enter the information you used while registering an account.</p>
+                    <h2 className="text-[3vw]">Become a Registered User</h2>
+                    <p className="text-[1.2vw]">Enter valid information and create an account.</p>
+                </div>
+                <div>
+                    <label className="text-[1.2vw]" htmlFor="">Name</label>
+                    <br />
+                    <input className={`${inputStyle}`} type="text" />
+                </div>
+                <div>
+                    <label className="text-[1.2vw]" htmlFor="">imgUrl</label>
+                    <br />
+                    <input className={`${inputStyle}`} type="text" />
                 </div>
                 <div>
                     <label className="text-[1.2vw]" htmlFor="">Email</label>
@@ -26,7 +35,7 @@ const Login = () => {
 
 
                 <div className="space-y-[1vw]">
-                    <p className="text-[1vw]">Don&apos;t have an account? <Link to={'/register'} className="hover:text-red-400 underline" >Register Now</Link></p>
+                    <p className="text-[1vw]">Already have an account?<Link className="hover:text-red-400 underline" to={'/login'}>Login Now</Link></p>
                 </div>
                 <input className="bg-[#C40C0C] rounded-full w-full h-[3.5vw] border text-white text-[1.2vw]" type="submit" value="Login" />
 
@@ -44,4 +53,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;

@@ -7,37 +7,42 @@ import News from "../Pages/News/News";
 import Contact from "../Pages/Contact/Contact";
 import About from "../Pages/About/About";
 import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
-        errorElement:<Error404></Error404>,
+        errorElement: <Error404></Error404>,
         children: [
             {
-            path: "/",
-            element: <Home></Home>,
+                path: "/",
+                element: <Home></Home>,
             },
             {
-            path: "/menu",
-            element: <Menu></Menu>,
+                path: "/menu",
+                element: <Menu></Menu>,
             },
             {
-            path: "/about",
-            element: <About></About>,
+                path: "/about",
+                element: <About></About>,
             },
             {
-            path: "/news",
-            element: <News></News>,
+                path: "/news",
+                element: <News></News>,
             },
             {
-            path: "/contact",
-            element: <Contact></Contact>,
+                path: "/contact",
+                element: <Contact></Contact>,
             },
             {
-            path: "/login",
-            element: <Login></Login>,
+                path: "/login",
+                element: <Login></Login>,
             },
-    ]
+            {
+                path: "/register",
+                element: <Register></Register>,
+            },
+        ]
     },
 ]);
