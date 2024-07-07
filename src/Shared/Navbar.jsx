@@ -22,7 +22,7 @@ const Navbar = () => {
                         className="flex my-3 gap-10 p-2 text-sm items-center">
                         <Link to='/news'><li className="hover:underline">News</li></Link>
                         <Link to='/contact'><li className="hover:underline">Contact</li></Link>
-                        <Link to='/contact'><li className="hover:underline">Login</li></Link>
+                        <Link to='/login'><li className="hover:underline">Login</li></Link>
                     </ul>
                 </div>
             </div>

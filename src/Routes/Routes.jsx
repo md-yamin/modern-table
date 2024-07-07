@@ -6,6 +6,7 @@ import Error404 from "../Shared/Error404";
 import News from "../Pages/News/News";
 import Contact from "../Pages/Contact/Contact";
 import About from "../Pages/About/About";
+import Login from "../Pages/Login/Login";
 
 export const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
             {
             path: "/contact",
             element: <Contact></Contact>,
+            },
+            {
+            path: "/login",
+            element: <Login></Login>,
             },
     ]
     },
