@@ -18,7 +18,7 @@ const Register = () => {
                     <input className={`${inputStyle}`} type="text" />
                 </div>
                 <div>
-                    <label className="text-[1.2vw]" htmlFor="">imgUrl</label>
+                    <label className="text-[1.2vw]" htmlFor="">ImgUrl</label>
                     <br />
                     <input className={`${inputStyle}`} type="text" />
                 </div>
@@ -37,11 +37,11 @@ const Register = () => {
                 <div className="space-y-[1vw]">
                     <p className="text-[1vw]">Already have an account?<Link className="hover:text-red-400 underline" to={'/login'}>Login Now</Link></p>
                 </div>
-                <input className="bg-[#C40C0C] rounded-full w-full h-[3.5vw] border text-white text-[1.2vw]" type="submit" value="Login" />
+                <input className="bg-[#C40C0C] rounded-full w-full h-[3.5vw] border text-white text-[1.2vw]" type="submit" value="Register" />
 
                 <button className="bg-[#C40C0C] rounded-full w-full h-[3.5vw] border text-white text-[1.2vw]">
                     <div className="flex justify-center items-center gap-2">
-                        <FaGoogle></FaGoogle><p>Log in with Google</p>
+                        <FaGoogle></FaGoogle><p>Register in with Google</p>
                     </div>
                 </button>
             </form>
