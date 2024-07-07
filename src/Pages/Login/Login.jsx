@@ -1,3 +1,4 @@
+import { FaGoogle } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 
@@ -22,9 +23,21 @@ const Login = () => {
                     <br />
                     <input className={`${inputStyle}`} type="Password" />
                 </div>
-                <p className="text-[1vw] hover:text-red-400"><Link to={'/'}>Back to Home</Link></p>
-                <input className="bg-[#C40C0C] rounded-full uppercase w-full h-[3.5vw] border text-white text-[1.2vw]" type="submit" value="Login" />
+
+
+                <div className="space-y-[1vw]">
+                    <p className="text-[1vw]">Don&apos;t have an account? <Link className="hover:text-red-400 underline" to={'/'}>Register Now</Link></p>
+                    <p className="text-[1vw] hover:text-red-400"><Link to={'/'}>Back to Home</Link></p>
+                </div>
+                <input className="bg-[#C40C0C] rounded-full w-full h-[3.5vw] border text-white text-[1.2vw]" type="submit" value="Login" />
+
+                <button className="bg-[#C40C0C] rounded-full w-full h-[3.5vw] border text-white text-[1.2vw]">
+                    <div className="flex justify-center items-center gap-2">
+                        <FaGoogle></FaGoogle><p>Log in with Google</p>
+                    </div>
+                </button>
             </form>
+
 
             <img className="w-1/2 h-screen object-cover" src="https://i.ibb.co/gMC91F8/2895.jpg" alt="" />
 
