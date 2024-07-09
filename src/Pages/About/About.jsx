@@ -3,11 +3,11 @@ import Banner from "../../Shared/Banner";
 import IntroductionSection from "../../Shared/IntroductionSection";
 import TableBooking from "../../Shared/TableBooking";
 import aboutSectionData from "../../../public/aboutSectionData.json"
-import chefsData from "../../../public/chefsData.json"
+import useChefs from "../../Hooks/useChefs";
 
 const About = () => {
 
-
+    const [,chefs] = useChefs()
 
     return (
         <div className="space-y-[10vw]">
@@ -19,7 +19,7 @@ const About = () => {
             ></Banner>
             <div className="grid grid-cols-3">
                 {
-                    chefsData.map(data =>
+                    chefs.map(data =>
                         <div key={data._id} className="space-y-5">
                             <img className="w-3/4 mx-auto" src={data.profile_img} alt="" />
                             <h4 className="text-center font-semibold text-xl">{data.name}</h4>
