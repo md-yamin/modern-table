@@ -2,12 +2,24 @@ import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import Banner from "../../Shared/Banner";
 import IntroductionSection from "../../Shared/IntroductionSection";
 import TableBooking from "../../Shared/TableBooking";
-import aboutSectionData from "../../../public/aboutSectionData.json"
 import useChefs from "../../Hooks/useChefs";
+import { useEffect, useState } from "react";
+import useIntros from "../../Hooks/useIntros";
 
 const About = () => {
 
     const [,chefs] = useChefs()
+    const [introData ,setIntroData]= useState({})
+
+    const [, intros,isLoading] = useIntros()
+    useEffect(()=>{
+        if (intros[0] && !isLoading) {
+                const {aboutSection} =  intros[0]
+                setIntroData(aboutSection) 
+        }
+        return
+    },[intros,isLoading])
+
 
     return (
         <div className="space-y-[10vw]">
@@ -38,7 +50,7 @@ const About = () => {
             <IntroductionSection
                 topHeading="Savor Our Story,"
                 topHeading2="Relish Our Craft"
-                sectionData={aboutSectionData}>
+                sectionData={introData}>
             </IntroductionSection>
             <TableBooking></TableBooking>
         </div>

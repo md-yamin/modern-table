@@ -1,7 +1,6 @@
 
 
-const IntroductionSection = ({ sectionData, topHeading, topHeading2 }) => {
-
+const IntroductionSection = ( {sectionData, topHeading, topHeading2 }) => {
     const { image1, heading1, para1, image2, heading2, para2, image3, heading3, para3, image4, heading4, para4 } = sectionData
     const headingStyle = 'text-3xl font-serif mt-6 mb-3'
     return (

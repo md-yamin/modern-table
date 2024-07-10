@@ -1,7 +1,9 @@
-import news from "../../../public/news.json"
+import useNews from "../../Hooks/useNews";
 
 const News = () => {
 
+
+    const [,news]=useNews()
     const formatDate = (dateString) => {
         const date = new Date(dateString);
         return date.toLocaleDateString('en-GB', {
@@ -14,7 +16,7 @@ const News = () => {
         <div className="mx-auto container">
             <h2 className="md:text-4xl lg:text-5xl 2xl:text-6xl font-serif font-light text-center mb-[4vw] pt-[10vw]">Flavorful Insights</h2>
             {
-                news.map(article => <div key={article.id} className="flex mx-auto justify-center items-center">
+                news.map(article => <div key={article._id} className="flex mx-auto justify-center items-center">
                     <div className="pr-[5vw]">
                         <h2 className="w-[10vw]">{formatDate(article.date)}</h2>
                     </div>
