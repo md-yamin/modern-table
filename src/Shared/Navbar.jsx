@@ -1,7 +1,12 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Context/AuthContext";
 
 
 const Navbar = () => {
+
+    const {user, logOut} = useContext(AuthContext)
+
     return (
         <div>
             <div className="items-center text-white bg-[#C40C0C] fixed z-10 w-screen">
@@ -22,7 +27,14 @@ const Navbar = () => {
                         className="flex my-3 gap-10 p-2 text-sm items-center">
                         <Link to='/news'><li className="hover:underline">News</li></Link>
                         <Link to='/contact'><li className="hover:underline">Contact</li></Link>
-                        <Link to='/login'><li className="hover:underline">Login</li></Link>
+                        {
+                            user?
+                            <button
+                            onClick={()=>logOut()} 
+                            className="btn">Sign Out</button>
+                            :
+                            <Link to='/login'><li className="hover:underline">Login</li></Link>
+                        }
                     </ul>
                 </div>
             </div>
