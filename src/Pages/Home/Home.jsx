@@ -24,7 +24,7 @@ const Home = () => {
     return (
         <div className="space-y-[20vh]">
             <Banner
-                subHeading='WELCOME TO URBAN FEAST'
+                subHeading='WELCOME TO Modern Table'
                 heading='Embark on a Journey of Culinary Excellence'
                 buttonText='our menu'
                 bgImgUrl='https://i.ibb.co/qdzmFQP/55861.jpg'

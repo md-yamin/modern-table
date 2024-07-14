@@ -128,7 +128,7 @@ const Register = () => {
                         {...register("name", { required: true })} />
                 </div>
                 <div>
-                    <label className="text-[1.2vw]" htmlFor="">ImgUrl</label>
+                    <label className="text-[1.2vw]" htmlFor="">Image Url</label>
                     <br />
                     <input
                         type="text"
