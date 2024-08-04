@@ -12,7 +12,7 @@ const Item = () => {
             <div className="mx-auto">
                 <h4 className="capitalize">{item?.category}</h4>
                 <h2 className="text-[5vw] mb-5">{item?.title}</h2>
-                <p className="w-1/2 mx-auto text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad exercitationem consequuntur aliquid tempora repellendus fugiat laudantium reprehenderit.</p>
+                <p className="w-1/2 mx-auto text-sm">{item?.description}</p>
             </div>
 
             <img className="w-4/5 max-h-[85vh] mx-auto object-cover object-center" src={item?.image} alt="" />
