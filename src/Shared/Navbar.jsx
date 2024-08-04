@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="items-center text-white bg-gradient-to-r from-orange-400 to-red-600 ... fixed z-10 w-screen">
+            <div className="items-center text-white bg-gradient-to-r bg-gradient-to-r from-orange-400 to-red-600 ...  fixed z-10 w-screen">
                 <div className="flex justify-around mx-auto">
                     <ul
                         className="flex my-3 gap-10 p-2 text-sm items-center">

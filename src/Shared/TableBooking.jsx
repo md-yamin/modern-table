@@ -96,7 +96,7 @@ const TableBooking = () => {
                 <input
                     type="submit"
                     value="SEND"
-                    className='px-5 py-3 text-xs mx-auto bg-[#C40C0C] rounded-2xl col-span-2 w-[15%] text-white' />
+                    className='px-5 py-3 text-xs mx-auto  bg-gradient-to-r from-orange-400 to-red-600 ...  rounded-2xl col-span-2 w-[15%] text-white' />
             </form>
         </div>
     );

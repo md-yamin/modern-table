@@ -171,11 +171,11 @@ const Register = () => {
                     <div className="space-y-[1vw]">
                         <p className="text-[1vw]">Already have an account?<Link className="hover:text-red-400 underline" to={'/login'}>Login Now</Link></p>
                     </div>
-                    <input className="bg-[#C40C0C] rounded-full w-full h-[3.5vw] border text-white text-[1.2vw]" type="submit" value="Register" />
+                    <input className=" bg-gradient-to-r from-orange-400 to-red-600 ...  rounded-full w-full h-[3.5vw] border text-white text-[1.2vw]" type="submit" value="Register" />
 
                     <button 
                     onClick={() => handleSocialLogin(signInWithGoogle)}
-                    className="bg-[#C40C0C] rounded-full w-full h-[3.5vw] border text-white text-[1.2vw]">
+                    className=" bg-gradient-to-r from-orange-400 to-red-600 ...  rounded-full w-full h-[3.5vw] border text-white text-[1.2vw]">
                         <div className="flex justify-center items-center gap-2">
                             <FaGoogle></FaGoogle><p>Register in with Google</p>
                         </div>
