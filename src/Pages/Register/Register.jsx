@@ -147,7 +147,7 @@ const Register = () => {
                     <label className="text-[1.2vw]" htmlFor="">Password</label>
                     <br />
                     <input
-                        type="Password"
+                        type={(!passwordEye) ? 'password' : 'text'}
                         className={`${inputStyle}`}
                         {...register("password", {
                             required: true,

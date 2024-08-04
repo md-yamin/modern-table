@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import useMeals from "../Hooks/useMenu";
 
 
@@ -29,7 +29,7 @@ const ItemsGrid = () => {
                                 :
                                 <p className="w-[70%] mx-auto text-xs lg:text-sm text-center ">{item.description}</p>
                         }
-                        <button className="hover:underline text-sm font-semibold font-mono mt-2 md:mt-2 mb-10">View Details</button>
+                         <Link to={`/item/${item._id}`} className="mx-auto"><button className="hover:underline text-sm font-semibold font-mono mt-2 md:mt-2 mb-10">View Details</button></Link>
                     </div>)
                     :
                     featured.map(item => <div key={item._id} className="mx-auto flex flex-col gap-5">
@@ -41,7 +41,8 @@ const ItemsGrid = () => {
                                 :
                                 <p className="w-[70%] mx-auto text-xs lg:text-sm text-center ">{item.description}</p>
                         }
-                        <button className="hover:underline text-sm font-semibold font-mono mt-2 md:mt-2 mb-10">View Details</button>
+                        <Link to={`/item/${item._id}`} className="mx-auto"><button className="hover:underline text-sm font-semibold font-mono mt-2 md:mt-2 mb-10">View Details</button></Link>
+                        
                     </div>)
                 }
             </div>

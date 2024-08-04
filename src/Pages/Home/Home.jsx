@@ -17,10 +17,8 @@ const Home = () => {
         }
         return
     },[intros,isLoading])
-
-
     const topHeading = "Excellence in Every Bite, Quality in Every Dish"
-    console.log(introData);
+    
     return (
         <div className="space-y-[20vh]">
             <Banner

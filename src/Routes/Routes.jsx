@@ -8,6 +8,7 @@ import Contact from "../Pages/Contact/Contact";
 import About from "../Pages/About/About";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import Item from "../Pages/Item/Item";
 
 export const router = createBrowserRouter([
     {
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
             {
                 path: "/register",
                 element: <Register></Register>,
+            },
+            {
+                path: "/item/:id",
+                element: <Item></Item>,
             },
         ]
     },
